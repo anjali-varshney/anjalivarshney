@@ -20,28 +20,28 @@ body {
 .head {
     padding: 20px;
     color: black;
-    text-align: justify;
-    font-size: x-large;
+    text-align: center;
+    font-size: larger;
 }
 
 
 .container {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows:2fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr;
 }
 
 .item {
     background-color: rgb(188, 188, 238);
-    border: 2px solid rgb(0, 0, 0,0.6);
+    border: 2px solid rgb(0, 0, 0, 0.6);
     margin: 1rem;
     padding: 1rem;
     text-align: justify;
     border-radius: 0.5rem;
     text-align: center;
     font-style: oblique;
-    color: rgb(255, 255, 255,0.8);
+    color: rgb(255, 255, 255, 0.8);
     font-size: 1.2rem;
     height: 15rem;
     transition: all;
@@ -54,15 +54,19 @@ body {
     box-shadow: 0 0 2px 1px;
 }
 
-.image_wrapper{
+.image_wrapper {
     margin: 1rem;
     border-radius: 0.5rem;
+    border: solid beige;
+    position: relative;
+    ;
 }
-.text{
+
+.text {
     position: absolute;
-    top:45%;
-    left:83%;
-    font-size: x-large;
+    top: 15%;
+    left: 50%;
+    font-size: 1rem;
     font-style: italic;
     color: black;
 }
@@ -80,28 +84,35 @@ img:hover {
     box-shadow: 0 0 2px 1px;
 }
 
-.contact{
-    display: inline-flex;
+.contact {
+    /* display: inline-flex; */
+    /* margin-left: 20rem; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
     margin-top: 1rem;
-    margin-left: 20rem;
     padding: 2rem;
     /*border: 2px solid;*/
     text-align: justify;
-    font-size: large;
+    font-size: larger;
 }
-.contact a{
+
+.contact a {
     margin-right: 30px;
     width: 30px;
     height: 28px;
 }
-.contact a:hover{
+
+.contact a:hover {
     /*color: black;*/
     cursor: pointer;
-   
-    
-}    
+}
+
 @media screen and (max-width: 420px) {
-    .container{
+    .container {
         grid-template-columns: 1fr;
 
     }
