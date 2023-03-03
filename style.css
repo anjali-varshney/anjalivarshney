@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    /*padding: 0;*/
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lavender;
+    margin: 20px;
+}
+
+#title {
+    text-align: center;
+    color: black;
+    /*border-style: solid;*/
+    display: flex;
+    justify-content: center;
+}
+
+.head {
+    padding: 20px;
+    color: black;
+    text-align: justify;
+    font-size: x-large;
+}
+
+
+.container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:2fr;
+}
+
+.item {
+    background-color: rgb(188, 188, 238);
+    border: 2px solid rgb(0, 0, 0,0.6);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: justify;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-style: oblique;
+    color: rgb(255, 255, 255,0.8);
+    font-size: 1.2rem;
+    height: 15rem;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: black;
+    box-shadow: 0 0 2px 1px;
+}
+
+.image_wrapper{
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+.text{
+    position: absolute;
+    top:45%;
+    left:83%;
+    font-size: x-large;
+    font-style: italic;
+    color: black;
+}
+
+img {
+    border-radius: 8px;
+    display: -webkit-box;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+img:hover {
+    box-shadow: 0 0 2px 1px;
+}
+
+.contact{
+    display: inline-flex;
+    margin-top: 1rem;
+    margin-left: 20rem;
+    padding: 2rem;
+    /*border: 2px solid;*/
+    text-align: justify;
+    font-size: large;
+}
+.contact a{
+    margin-right: 30px;
+    width: 30px;
+    height: 28px;
+}
+.contact a:hover{
+    /*color: black;*/
+    cursor: pointer;
+   
+    
+}    
+@media screen and (max-width: 420px) {
+    .container{
+        grid-template-columns: 1fr;
+
+    }
+}
